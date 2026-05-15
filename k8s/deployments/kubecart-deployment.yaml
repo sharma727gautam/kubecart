@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubecart-deployment
+  labels:
+    app: kubecart
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kubecart
+  template:
+    metadata:
+      labels:
+        app: kubecart
+    spec:
+      containers:
+        - name: kubecart-api
+          image: kubecart-api:v1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+
