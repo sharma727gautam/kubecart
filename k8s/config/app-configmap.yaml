@@ -1,0 +1,15 @@
+apiVersion: v1
+
+kind: ConfigMap
+
+metadata:
+  name: kubecart-config
+  namespace: kubecart
+
+data:
+
+  APP_ENV: "development"
+
+  LOG_LEVEL: "INFO"
+
+  FEATURE_DISCOUNT_ENABLED: "true"
