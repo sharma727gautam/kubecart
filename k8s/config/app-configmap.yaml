@@ -13,3 +13,5 @@ data:
   LOG_LEVEL: "INFO"
 
   FEATURE_DISCOUNT_ENABLED: "true"
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://postgres-service:5432/kubecart"
+  SPRING_DATASOURCE_USERNAME: "postgres"
