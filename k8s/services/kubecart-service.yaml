@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: kubecart-service
+  namespace: kubecart
 spec:
   type: ClusterIP
   selector:

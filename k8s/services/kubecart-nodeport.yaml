@@ -3,6 +3,7 @@ kind: Service
 
 metadata:
   name: kubecart-nodeport
+  namespace: kubecart
 
 spec:
   type: NodePort
