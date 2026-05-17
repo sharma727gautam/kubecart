@@ -15,6 +15,7 @@ spec:
       labels:
         app: kubecart
     spec:
+      serviceAccountName: kubecart-sa
       containers:
         - name: kubecart-api
           image: kubecart-api:v1

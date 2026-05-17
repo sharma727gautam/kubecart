@@ -1,0 +1,16 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+
+metadata:
+  name: kubecart-rolebinding
+  namespace: kubecart
+
+subjects:
+  - kind: ServiceAccount
+    name: kubecart-sa
+    namespace: kubecart
+
+roleRef:
+  kind: Role
+  name: kubecart-reader
+  apiGroup: rbac.authorization.k8s.io
